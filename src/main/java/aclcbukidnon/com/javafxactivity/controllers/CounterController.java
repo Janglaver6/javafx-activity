@@ -7,30 +7,24 @@ import javafx.scene.control.Label;
 public class CounterController {
 
     @FXML
-    private Button decrementButton;
+    private Button incrementButton;
 
     @FXML
-    private Button incrementButton;
+    private Button decrementButton;
 
     @FXML
     private Label counterLabel;
 
-    private int counter = 0; // Encapsulation: private counter variable
+    private int counter = 0;
 
     @FXML
-    private void initialize() {
-        updateCounterLabel();
-
-        decrementButton.setOnAction(_ -> decrement());
-        incrementButton.setOnAction(_ -> increment());
-    }
-
-    private void increment() {
+    private void handleIncrement() {
         counter++;
         updateCounterLabel();
     }
 
-    private void decrement() {
+    @FXML
+    private void handleDecrement() {
         counter--;
         updateCounterLabel();
     }

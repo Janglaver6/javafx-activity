@@ -4,122 +4,52 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.CalculatorController">
-   <children>
-      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Label fx:id="displayLabel" text="0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-      <HBox prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616; -fx-border-radius: 0;" text="7" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="8" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="9" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="+" textFill="WHITE" onAction="#onOperatorClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="CLEAR" textFill="WHITE" onAction="#onClearClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="4" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="5" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="6" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="-" textFill="WHITE" onAction="#onOperatorClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="BCKSPC" textFill="WHITE" onAction="#onBackspaceClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="1" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="2" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="3" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="/" textFill="WHITE" onAction="#onOperatorClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="*" textFill="WHITE" onAction="#onOperatorClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="0" textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="." textFill="WHITE" onAction="#onNumberClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="=" textFill="WHITE" onAction="#onEqualClick">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-   </children>
+<VBox fx:controller="aclcbukidnon.com.javafxactivity.CalculatorController"
+      xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      prefHeight="400.0" prefWidth="600.0" spacing="5"
+      style="-fx-background-color: #1e1e1e; -fx-padding: 10;">
+
+   <!-- Display -->
+   <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="600.0">
+      <Label fx:id="displayLabel" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0"/>
+         </font>
+      </Label>
+   </HBox>
+
+   <!-- Row 1 -->
+   <HBox spacing="5">
+      <Button fx:id="btn7" text="7" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn8" text="8" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn9" text="9" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnAdd" text="+" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnClear" text="CLEAR" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+   </HBox>
+
+   <!-- Row 2 -->
+   <HBox spacing="5">
+      <Button fx:id="btn4" text="4" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn5" text="5" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn6" text="6" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnSubtract" text="-" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnBackspace" text="BCKSPC" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+   </HBox>
+
+   <!-- Row 3 -->
+   <HBox spacing="5">
+      <Button fx:id="btn1" text="1" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn2" text="2" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btn3" text="3" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnDivide" text="/" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnMultiply" text="*" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+   </HBox>
+
+   <!-- Row 4 -->
+   <HBox spacing="5">
+      <Button fx:id="btn0" text="0" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnDecimal" text="." onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+      <Button fx:id="btnEquals" text="=" onAction="#handleButtonAction" style="-fx-background-color: #161616;" textFill="WHITE"/>
+   </HBox>
 </VBox>
